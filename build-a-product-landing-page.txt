@@ -1,0 +1,170 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Landing Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header id="header">
+    <img id="header-img" src="https://via.placeholder.com/150x50?text=Logo" alt="Company Logo">
+    <nav id="nav-bar">
+      <a class="nav-link" href="#features">Features</a>
+      <a class="nav-link" href="#video-section">Video</a>
+      <a class="nav-link" href="#pricing">Pricing</a>
+    </nav>
+  </header>
+
+  <!-- Features Section -->
+  <section id="features">
+    <h2>Our Features</h2>
+    <p>Our product offers amazing features that make your life easier.</p>
+    <ul>
+      <li>Fast and Reliable</li>
+      <li>User-Friendly Interface</li>
+      <li>Responsive Design</li>
+    </ul>
+  </section>
+
+  <!-- Video Section -->
+  <section id="video-section">
+    <h2>Watch Our Product in Action</h2>
+    <video id="video" controls src="https://www.w3schools.com/html/mov_bbb.mp4"></video>
+  </section>
+
+  <!-- Pricing Section -->
+  <section id="pricing">
+    <h2>Sign Up for Updates</h2>
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      <input type="submit" id="submit" value="Subscribe">
+    </form>
+  </section>
+</body>
+</html>
+
+
+** end of index.html **
+
+** start of styles.css **
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Header and Navbar */
+header#header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #2c3e50;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  color: white;
+  z-index: 1000;
+}
+
+#header-img {
+  max-height: 50px;
+}
+
+#nav-bar {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+/* Sections */
+section {
+  padding: 100px 20px 50px; /* top padding for fixed header */
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+section p, section ul {
+  margin-bottom: 15px;
+}
+
+ul li {
+  margin-left: 20px;
+}
+
+/* Video */
+#video {
+  width: 100%;
+  max-width: 600px;
+  display: block;
+  margin: 20px auto;
+  border-radius: 10px;
+}
+
+/* Form */
+form#form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+#email {
+  padding: 10px;
+  width: 80%;
+  max-width: 400px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#submit {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+}
+
+#submit:hover {
+  background-color: #45a049;
+}
+
+/* Media Query */
+@media (max-width: 768px) {
+  header#header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #nav-bar {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+
+  section {
+    padding-top: 120px;
+  }
+}
+
+
+** end of styles.css **
+

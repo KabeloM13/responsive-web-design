@@ -1,0 +1,131 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1 id="title">Customer Feedback Survey</h1>
+    <p id="description">We value your feedback. Please fill out this short survey.</p>
+  </header>
+
+  <form id="survey-form">
+    <!-- Name -->
+    <label id="name-label" for="name">Name:</label>
+    <input type="text" id="name" placeholder="Enter your name" required>
+
+    <!-- Email -->
+    <label id="email-label" for="email">Email:</label>
+    <input type="email" id="email" placeholder="Enter your email" required>
+
+    <!-- Number -->
+    <label id="number-label" for="number">Age:</label>
+    <input type="number" id="number" placeholder="Enter your age" min="10" max="100">
+
+    <!-- Dropdown -->
+    <label for="dropdown">Your favorite product:</label>
+    <select id="dropdown">
+      <option value="">Select an option</option>
+      <option value="product1">Product 1</option>
+      <option value="product2">Product 2</option>
+      <option value="product3">Product 3</option>
+    </select>
+
+    <!-- Radio Buttons -->
+    <fieldset>
+      <legend>How often do you use our product?</legend>
+      <input type="radio" id="daily" name="usage" value="daily">
+      <label for="daily">Daily</label>
+
+      <input type="radio" id="weekly" name="usage" value="weekly">
+      <label for="weekly">Weekly</label>
+
+      <input type="radio" id="monthly" name="usage" value="monthly">
+      <label for="monthly">Monthly</label>
+    </fieldset>
+
+    <!-- Checkboxes -->
+    <fieldset>
+      <legend>Features you like (select all that apply):</legend>
+      <input type="checkbox" id="feature1" name="features" value="feature1">
+      <label for="feature1">Feature 1</label>
+
+      <input type="checkbox" id="feature2" name="features" value="feature2">
+      <label for="feature2">Feature 2</label>
+
+      <input type="checkbox" id="feature3" name="features" value="feature3">
+      <label for="feature3">Feature 3</label>
+    </fieldset>
+
+    <!-- Textarea -->
+    <label for="comments">Additional comments:</label>
+    <textarea id="comments" placeholder="Enter your feedback here..."></textarea>
+
+    <!-- Submit Button -->
+    <button type="submit" id="submit">Submit</button>
+  </form>
+</body>
+</html>
+
+
+** end of index.html **
+
+** start of styles.css **
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  background-color: #fff;
+  padding: 20px 30px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+label, legend {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+input, select, textarea, button {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  margin-top: 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+
+** end of styles.css **
+

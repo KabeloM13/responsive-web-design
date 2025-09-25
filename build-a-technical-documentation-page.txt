@@ -1,0 +1,182 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Frontend Fundamentals</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav id="navbar">
+    <header>Frontend Fundamentals</header>
+    <a class="nav-link" href="#HTML_Basics">HTML Basics</a>
+    <a class="nav-link" href="#CSS_Selectors">CSS Selectors</a>
+    <a class="nav-link" href="#Responsive_Design">Responsive Design</a>
+    <a class="nav-link" href="#Accessibility">Accessibility</a>
+    <a class="nav-link" href="#Semantic_HTML">Semantic HTML</a>
+  </nav>
+
+  <main id="main-doc">
+    <section class="main-section" id="HTML_Basics">
+      <header>HTML Basics</header>
+      <p>HTML is the foundation of web content.</p>
+      <p>It uses tags to structure text, images, and links.</p>
+      <p>Each tag has an opening and closing form.</p>
+      <p>Attributes add extra information to elements.</p>
+      <p>HTML5 introduced semantic elements.</p>
+      <code>&lt;div&gt;Content&lt;/div&gt;</code>
+      <code>&lt;img src="image.jpg" alt="description"&gt;</code>
+      <ul>
+        <li>Headings</li>
+        <li>Paragraphs</li>
+        <li>Lists</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="CSS_Selectors">
+      <header>CSS Selectors</header>
+      <p>Selectors target HTML elements for styling.</p>
+      <p>They can be simple or complex.</p>
+      <p>Class selectors use a dot prefix.</p>
+      <p>ID selectors use a hash prefix.</p>
+      <p>Combinators define relationships.</p>
+      <code>p { color: blue; }</code>
+      <code>.box:hover { background: yellow; }</code>
+      <ul>
+        <li>Universal selector</li>
+        <li>Descendant selector</li>
+        <li>Child selector</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Responsive_Design">
+      <header>Responsive Design</header>
+      <p>Responsive design adapts to screen sizes.</p>
+      <p>Media queries are key tools.</p>
+      <p>Flexible layouts use percentages.</p>
+      <p>Images should scale with containers.</p>
+      <p>Breakpoints define layout changes.</p>
+      <code>@media (max-width: 600px) { ... }</code>
+      <code>img { max-width: 100%; height: auto; }</code>
+      <ul>
+        <li>Fluid grids</li>
+        <li>Viewport units</li>
+        <li>Mobile-first approach</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Accessibility">
+      <header>Accessibility</header>
+      <p>Accessibility ensures content is usable by all.</p>
+      <p>Use semantic HTML for screen readers.</p>
+      <p>Provide alt text for images.</p>
+      <p>Ensure sufficient color contrast.</p>
+      <p>Use ARIA roles when needed.</p>
+      <code>&lt;button aria-label="Close"&gt;</code>
+      <code>&lt;nav role="navigation"&gt;</code>
+      <ul>
+        <li>Keyboard navigation</li>
+        <li>Screen reader support</li>
+        <li>Focus management</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Semantic_HTML">
+      <header>Semantic HTML</header>
+      <p>Semantic elements describe their meaning.</p>
+      <p>They improve accessibility and SEO.</p>
+      <p>Examples include &lt;article&gt;, &lt;section&gt;, &lt;aside&gt;.</p>
+      <p>Use them instead of generic &lt;div&gt; tags.</p>
+      <p>They help organize content logically.</p>
+      <code>&lt;main&gt;Main content&lt;/main&gt;</code>
+      <code>&lt;footer&gt;Footer info&lt;/footer&gt;</code>
+      <ul>
+        <li>&lt;header&gt;</li>
+        <li>&lt;nav&gt;</li>
+        <li>&lt;figure&gt;</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
+
+
+** end of index.html **
+
+** start of styles.css **
+
+/* Base styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  display: flex;
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100vh;
+  background-color: #222;
+  color: #fff;
+  padding: 1rem;
+  overflow-y: auto;
+}
+
+#navbar header {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.nav-link {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  margin: 0.5rem 0;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+#main-doc {
+  margin-left: 260px;
+  padding: 2rem;
+}
+
+.main-section {
+  margin-bottom: 2rem;
+}
+
+code {
+  display: block;
+  background: #f4f4f4;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  border-left: 4px solid #ccc;
+}
+
+/* ✅ Media query for smaller screens */
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+  }
+
+  #navbar {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+
+  #main-doc {
+    margin-left: 0;
+  }
+}
+
+
+** end of styles.css **
+

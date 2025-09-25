@@ -1,0 +1,139 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <nav id="navbar">
+    <a href="#welcome-section">Welcome</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Welcome Section -->
+  <section id="welcome-section">
+    <h1>Hello, I'm Kabelo 👋</h1>
+    <p>A passionate UX/Product Designer & Developer</p>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="project-tile">
+      <a href="https://yourprojectlink.com" target="_blank">
+        <img src="https://via.placeholder.com/300x200" alt="Project Thumbnail" />
+        <p>Project Title</p>
+      </a>
+    </div>
+  </section>
+
+  <!-- Profile Link -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Check out my work on GitHub:</p>
+    <a id="profile-link" href="https://github.com/KabeloM13" target="_blank">My GitHub Profile</a>
+  </section>
+</body>
+</html>
+
+
+** end of index.html **
+
+** start of styles.css **
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Navbar */
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #333;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+#navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Welcome Section */
+#welcome-section {
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  color: white;
+  text-align: center;
+}
+
+/* Projects Section */
+#projects {
+  padding: 4rem 2rem;
+  background: #f4f4f4;
+}
+
+#projects h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.project-tile {
+  max-width: 300px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.project-tile img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Contact Section */
+#contact {
+  padding: 3rem;
+  text-align: center;
+}
+
+#profile-link {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.7rem 1.5rem;
+  background: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Media Query Example */
+@media (max-width: 600px) {
+  #navbar {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+
+** end of styles.css **
+

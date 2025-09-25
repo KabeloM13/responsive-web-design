@@ -1,0 +1,102 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tribute Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main id="main">
+    <!-- Title -->
+    <h1 id="title">Dr. Norman Borlaug</h1>
+
+    <!-- Image Section -->
+    <figure id="img-div">
+      <img id="image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Norman_Borlaug.jpg/640px-Norman_Borlaug.jpg" alt="Dr. Norman Borlaug">
+      <figcaption id="img-caption">Dr. Norman Borlaug, Father of the Green Revolution, helped save millions from hunger.</figcaption>
+    </figure>
+
+    <!-- Tribute Information -->
+    <section id="tribute-info">
+      <p>
+        Norman Borlaug (1914–2009) was an American agronomist, humanitarian, and Nobel laureate. 
+        He is often called "the man who saved a billion lives" for his work in developing high-yield, disease-resistant wheat varieties. 
+        His work led to the Green Revolution, which significantly increased food production worldwide.
+      </p>
+    </section>
+
+    <!-- External Link -->
+    <p>
+      Learn more about Dr. Borlaug on 
+      <a id="tribute-link" href="https://en.wikipedia.org/wiki/Norman_Borlaug" target="_blank">Wikipedia</a>.
+    </p>
+  </main>
+</body>
+</html>
+
+
+** end of index.html **
+
+** start of styles.css **
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+main#main {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 700px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+#title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+#img-div {
+  margin: 20px 0;
+}
+
+#image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+#img-caption {
+  margin-top: 10px;
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
+#tribute-info {
+  text-align: left;
+  margin: 20px 0;
+  line-height: 1.6;
+}
+
+#tribute-link {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+#tribute-link:hover {
+  text-decoration: underline;
+}
+
+
+** end of styles.css **
+
